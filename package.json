@@ -10,11 +10,6 @@
     "npm": "^6.0.0"
   },
   "dependencies": {
-    "@types/body-parser": "^1.17.0",
-    "@types/cookie-parser": "^1.4.1",
-    "@types/express": "^4.16.1",
-    "@types/morgan": "^1.7.35",
-    "@types/node": "^10.12.19",
     "bootstrap": "^4.2.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
@@ -26,8 +21,15 @@
     "morgan": "~1.9.0",
     "popper.js": "^1.14.7"
   },
-  "description": "COMP308-W2019-Lesson3A",
+  "description": "MongoDB Demo",
   "main": "server.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.16.1",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.12.18"
+  }
 }
