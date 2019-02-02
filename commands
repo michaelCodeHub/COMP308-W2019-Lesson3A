@@ -13,3 +13,6 @@ npm init
 save-dev
 
 npm i jquery popper.js bootstrap font-awesome --save
+
+npm i mongoose --save
+npm i @types/mongoose --save-dev
