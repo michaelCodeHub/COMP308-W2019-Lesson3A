@@ -3,19 +3,19 @@ let router = express.Router();
 let mongoose = require('mongoose');
 
 //create reference to contactSchema model
-let contact = require('../models/contact');
+let game = require('../models/game');
 
 // Get Contact list - READ
 
 router.get('/', (req,res,next) => {
-    contact.find((err, contactList) => {
+    game.find((err, gamesList) => {
         if(err){
             return console.error(err);
         }else{
-            console.log(contactList);
+            console.log(gamesList);
             res.render('contacts/index', { 
-                title: 'Contact List',
-                contacts: contactList 
+                title: 'My Faveurite Games List',
+                games: gamesList 
             });
         }
     })
