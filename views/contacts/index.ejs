@@ -4,7 +4,7 @@
     <br>
     <h3 class="text-center"><%= title %></h3>
     <div class="row justify-content-center">
-      <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-offset-3 col-md-6">
 
         <br>
         <table class="table label-bordered table-striped table-hover">
@@ -12,6 +12,8 @@
             <th class="text-center">First Name</th>
             <th class="text-center">Last Name</th>
             <th class="text-center">Age</th>
+            <th class="text-center"></th>
+            <th class="text-center"></th>
           </tr>
 
           <% contacts.forEach(contact => { %>
@@ -19,6 +21,14 @@
               <td class="text-center"><%= contact.firstName %></td>
               <td class="text-center"><%= contact.lastName %></td>
               <td class="text-center"><%= contact.age %></td>
+              
+              <td class="text-center">
+                <a href="./contact-list/edit/<%= contact._id %>" class="btn btn-primary"><i class="fa fa-edit"  aria-hidden="true"></i> Edit</a>
+              </td>
+
+              <td class="text-center">
+                  <a href="./contact-list/delete/<%= contact._id %>" class="btn btn-danger"><i class="fa fa-trash-alt"  aria-hidden="true"></i> Delete</a>
+                </td>
             </tr>
             <% }); %>
         </table>
