@@ -6,7 +6,7 @@ let gameSchema = mongoose.Schema({
     description: String
 },
 {
-    collection: "favourite_games"
+    collection: "games"
 });
 
 module.exports = mongoose.model('demo', gameSchema);

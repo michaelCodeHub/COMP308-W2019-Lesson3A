@@ -9,16 +9,14 @@
         <br>
         <table class="table label-bordered table-striped table-hover">
           <tr>
-            <th class="text-center">First Name</th>
-            <th class="text-center">Last Name</th>
-            <th class="text-center">Age</th>
+            <th class="text-center">Game Name</th>
+            <th class="text-center">Description</th>
           </tr>
 
-          <% contacts.forEach(contact => { %>
+          <% games.forEach(game => { %>
             <tr>
-              <td class="text-center"><%= contact.firstName %></td>
-              <td class="text-center"><%= contact.lastName %></td>
-              <td class="text-center"><%= contact.age %></td>
+              <td class="text-center"><%= game.gameName %></td>
+              <td class=""><%= game.description %></td>
             </tr>
             <% }); %>
         </table>
