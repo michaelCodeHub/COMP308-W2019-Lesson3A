@@ -1,8 +1,8 @@
-<%- include ../partials/header.ejs %>
+<% include ../partials/header.ejs %>
 
   <div class="container">
     <br>
-    <h3 class="text-center">My Favourite Games</h3>
+    <h3 class="text-center"><%= title %></h3>
     <div class="row justify-content-center">
       <div class="col-md-10 col-md-offset-1">
 
@@ -22,10 +22,11 @@
             </tr>
             <% }); %>
         </table>
-
+        <br>
+        <a class="btn btn-primary" href="/contact-list/add" role="button"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Add Contact</a>
       </div>
     </div>
   </div>
 
 
-<%- include ../partials/footer.ejs %>
+<% include ../partials/footer.ejs %>
